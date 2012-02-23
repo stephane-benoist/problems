@@ -80,7 +80,7 @@ class ProblemsController extends AppController {
 			
 			$result = $this->{$model}->report($foreignKey, $this->Auth->user('id'), $this->data);
 			if ($result === true) {
-				$this->_setFlash(__d('problems', 'The problem has been saved', true), 'success');
+				$this->_setFlash(__d('problems', 'Your problem has been taken into account', true), 'success');
 				$this->Referer->redirect('/');
 			}
 		} catch (OutOfBoundsException $e) {

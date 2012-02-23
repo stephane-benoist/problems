@@ -1,16 +1,11 @@
-# LANGUAGE translation of the CakePHP Problems plugin
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
 #
-# Copyright 2010, Cake Development Corporation (http://cakedc.com)
-#
-# Licensed under The MIT License
-# Redistributions of files must retain the above copyright notice.
-#
-# @copyright Copyright 2010, Cake Development Corporation (http://cakedc.com)
-# @license MIT License (http://www.opensource.org/licenses/mit-license.php)
-#
-#
+#, fuzzy
+msgid ""
+msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2010-09-15 15:23+0200\n"
+"POT-Creation-Date: 2012-02-23 16:56+0100\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -19,36 +14,36 @@
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: /controllers/problems_controller.php:63
+#: /controllers/problems_controller.php:78
 #: /models/problem.php:107
 msgid "Could not save the Problem of unallowed type."
 msgstr ""
 
-#: /controllers/problems_controller.php:67
-msgid "The problem has been saved"
+#: /controllers/problems_controller.php:83
+msgid "Your problem has been taken into account"
 msgstr ""
 
-#: /controllers/problems_controller.php:97;157
+#: /controllers/problems_controller.php:113;173
 msgid "Problem saved"
 msgstr ""
 
-#: /controllers/problems_controller.php:183
+#: /controllers/problems_controller.php:199
 msgid "Problem deleted"
 msgstr ""
 
-#: /controllers/problems_controller.php:236
+#: /controllers/problems_controller.php:252
 msgid "Problem report was accepted"
 msgstr ""
 
-#: /controllers/problems_controller.php:255
+#: /controllers/problems_controller.php:271
 msgid "Problem report was unaccepted"
 msgstr ""
 
-#: /controllers/problems_controller.php:276
+#: /controllers/problems_controller.php:292
 msgid "Problem reports were accepted"
 msgstr ""
 
-#: /controllers/problems_controller.php:297
+#: /controllers/problems_controller.php:313
 msgid "Problem reports were unaccepted"
 msgstr ""
 
@@ -112,19 +107,19 @@ msgstr ""
 msgid "Could not save the Problem, please check your inputs."
 msgstr ""
 
-#: /models/problem.php:162;194;217
+#: /models/problem.php:162;195;216
 msgid "Invalid Problem"
 msgstr ""
 
-#: /models/problem.php:235
+#: /models/problem.php:234
 msgid "You need to confirm to delete this Problem"
 msgstr ""
 
-#: /models/problem.php:263
+#: /models/problem.php:267
 msgid "Invalid object type for problem report"
 msgstr ""
 
-#: /models/problem.php:358
+#: /models/problem.php:364
 msgid "Unknown"
 msgstr ""
 
@@ -135,7 +130,17 @@ msgid "Report a Problem"
 msgstr ""
 
 #: /views/problems/add.ctp:6
+#: /views/problems/admin_edit.ctp:6
+#: /views/problems/edit.ctp:6
 msgid "Type of problem"
+msgstr ""
+
+#: /views/problems/add.ctp:7
+#: /views/problems/admin_edit.ctp:7
+#: /views/problems/admin_review.ctp:17
+#: /views/problems/admin_view.ctp:29
+#: /views/problems/edit.ctp:7
+msgid "Description"
 msgstr ""
 
 #: /views/problems/add.ctp:9
@@ -159,15 +164,15 @@ msgstr ""
 msgid "Be aware that your Problem will be deleted if you confirm!"
 msgstr ""
 
-#: /views/problems/admin_delete.ctp:11
+#: /views/problems/admin_delete.ctp:12
 msgid "Confirm"
 msgstr ""
 
-#: /views/problems/admin_delete.ctp:13
+#: /views/problems/admin_delete.ctp:14
 msgid "You have to confirm."
 msgstr ""
 
-#: /views/problems/admin_delete.ctp:14
+#: /views/problems/admin_delete.ctp:15
 msgid "Continue"
 msgstr ""
 
@@ -211,11 +216,6 @@ msgstr ""
 #: /views/problems/admin_review.ctp:16
 #: /views/problems/admin_view.ctp:53
 msgid "Accepted"
-msgstr ""
-
-#: /views/problems/admin_review.ctp:17
-#: /views/problems/admin_view.ctp:29
-msgid "Description"
 msgstr ""
 
 #: /views/problems/admin_review.ctp:40
