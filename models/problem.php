@@ -148,7 +148,7 @@ class Problem extends AppModel {
  * @return mixed True on successfully save else post data as array
  */
 	public function edit($id = null, $userId = null, $data = null) {
-		$this->_bindAssociatedModels();
+		$this->bindAssociatedModels();
 		$options = array(
 			'contain' => array('User'),
 			'conditions' => array(
@@ -185,7 +185,7 @@ class Problem extends AppModel {
  * @return array
  */
 	public function view($id = null) {
-		$binded = $this->_bindAssociatedModels();
+		$binded = $this->bindAssociatedModels();
 		$problem = $this->find('first', array(
 			'contain' => $binded,
 			'conditions' => array(
@@ -373,7 +373,7 @@ class Problem extends AppModel {
  *
  * @return array Binded models
  */
-	protected function _bindAssociatedModels() {
+	public function bindAssociatedModels() {
 		$binded = array();
 		$models = Configure::read('Problems.Models');
 		foreach ((array)$models as $alias => $model) {

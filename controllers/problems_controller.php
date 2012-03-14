@@ -225,6 +225,7 @@ class ProblemsController extends AppController {
 			'Problem.model' => $objectType,
 			'Problem.foreign_key' => $foreignKey
 		);
+		$this->paginate['contain'] = $this->Problem->bindAssociatedModels();
 
 		$this->set('problems', $this->paginate());
 		$this->set('reportTypes', $this->Problem->types);
